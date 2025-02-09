@@ -1,95 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mein Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
 </head>
+
 <body>
-    <nav id="desktop-nav"> 
-        <div class="logo">Marko Caranovic</div> 
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+  <div class="nav_container">
+    <div class="logo">Marko Caranovic</div>
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Marko Caranovic</div> 
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
+  </div>
+  <div class="content">
     <section id="profile">
+      <div class="responsive-content flex center gap-medium">
         <div class="section_pic-container">
-            <img src="./assets/markoBild-modified.png" alt="Marko Caranovic profile picture"/>
+          <img src="./assets/markoBild-modified.png" alt="Marko Caranovic profile picture" />
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hallo, ich bin</p>
-            <h1 class="title">Marko Caranovic</h1>
-            <p class="section__text__p2">Angehender Fach-Informatiker</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Caranovic_Marko_Lebenslauf.pdf')">
-                    Resume
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png"
-                 alt="My LinkedIn profile"
-                class="icon" 
-                onclick="location.href='https://linkedin.com/in/marko-caranovic-74a5602b1'">
-
-                <img src="./assets/github.png"
-                 alt="My Github profile"
-                class="icon" 
-                onclick="location.href='https://github.com/Markito03'">
-            </div>
+          <p class="section__text__p1">Hallo, ich bin</p>
+          <h1 class="title">Marko Caranovic</h1>
+          <p class="section__text__p2">Angehender Fach-Informatiker</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Caranovic_Marko_Lebenslauf.pdf')">
+              Resume
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img src="./assets/github.png" alt="My Github profile" class="icon"
+              onclick="location.href='https://github.com/Markito03'">
+          </div>
         </div>
+      </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img 
-                src="./assets/marko_alex.png"
-                alt="Profile picture"
-                class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                         src="./assets/experience.png"
-                         alt="Experience Icon"
-                         class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p></p>
-                        
-                    </div>
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">Über mich</h1>
+      <div class="responsive-content flex center gap-small">
+        <div id="about-me" class="flex-base-100 width-100">
+          <h2>ME SECTION</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
         </div>
+        <div id="about-experience" class="flex-base-100 width-100">
+          <h2>Erfahrung</h2>
+          <div class="experience-point">
+            <h4>Punkt 1</h4>
+            <p class="text">Text 1: Ut enim ad minim veniam, quis nostrud exercitation</p>
+          </div>
+          <div class="experience-point">
+            <h4>Punkt 2</h4>
+            <p class="text">Text 2: Urna odio ex etiam; elementum dictum</p>
+          </div>
+          <div class="experience-point">
+            <h4>Punkt 3</h4>
+            <p class="text">Text 3: Urna varius phasellus nulla pharetra tempus mauris tellus</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <script src="script.js"></script>
+    <section id="contact">
+      <h1 class="title">Kontakt</h1>
+      <div class="flex center">
+        <p>E-Mail:</p>
+        <a>www.marko-gw@brazzers.com</a>
+      </div>
+      <div class="flex center">
+        <p>Tel:</p>
+        <a>0192/223 2333</a>
+      </div>
+      <div class="flex center">
+        <p>Github:</p>
+        <a>https://github.com/Markito03</a>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
